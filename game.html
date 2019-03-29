@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-
-    <title>Creat Task Game</title>
-  <script type="text/javascript" src="game.js"></script>
-  <link rel="stylesheet" type="text/css" href="game.css">
+  <head>
+    <title>Diamond Miner</title>
+      <script type="text/javascript" src="index.js"></script>
+      <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  
-  <body>
-  
+  <body onload = start();>
+    <div class=game>
+      <form name="count">
+        <input name="display" class = display disabled>
+      </form>
+    </div>
+    <div class=stats>
+      <h1>
+        Current Stats
+      </h1>
+      <p>
+        Clicks Per Second:
+      </p>
+      <p id="numAutoMiners">
+        Number of Auto-Miners:
+      </p>
+      <form name="stats">
+        <input name="statsDisplay" class= statsOne disabled>
+      </form>
+      <form name = "numAutoMiners">
+        <input name="numAutoMiners" class = numAutoMiners disabled>
+      </form>
+    </div>
+    <button onclick="countInsert();" id="clicker">Mine Diamonds!</button>
+
+    <button onclick="buyMachine();" id="machineBuy">50 Diamonds: Buy an Auto-Miner</button>
+    <button onclick="reset();" id="reset">Reset Game</button>
+    <button onclick="buyFactory();" id="factory"> 1k Diamonds Buy an Auto-Miner Factory</button>
   </body>
- 
-  </html> 
+</html>
