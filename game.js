@@ -4,6 +4,7 @@ var stopGame;
 var numMachines = 0;
 var factStatus = 0;
 var numFact = 0;
+
 function countInsert(){
   document.count.display.value++
   stopGame = false;
@@ -11,6 +12,8 @@ function countInsert(){
 }
 
 function reset(){
+  //Colleague Wrote Reset Function//
+  countInsert();
   document.count.display.value = 0;
   i=0;
   stopGame = true;
@@ -18,8 +21,8 @@ function reset(){
   numMachines = 0;
   numFact = 0;
   factStatus = 0;
-  document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
+  start();
 }
 
 function buyMachine(){
@@ -29,6 +32,7 @@ function buyMachine(){
     numMachines++
     machineStatus=numMachines;
     numAutoMiners();
+    machineStat();
   }else {
     alert("Insufficient Funds");
   }
@@ -41,6 +45,7 @@ setInterval(function(){
     console.log(typeof stored);
     document.count.display.value = (stored + (machineStatus * 1));
   }
+  machineStat();
 }, 1000)
 
 setInterval(function(){
@@ -51,23 +56,32 @@ setInterval(function(){
 }, 5000)
 
 function machineStat(){
+  console.log(machineStatus)
   if(machineStatus >= 1){
-
+    let numOfMachines = machineStatus
+    return machineStatus
   }
 }
 function start(){
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
+  document.numAutoFactories.numAutoFactories.value = 0;
 }
 
 function numAutoMiners(){
-  document.numAutoMiners.numAutoMiners.value = numMachines
+  document.numAutoMiners.numAutoMiners.value = numMachines;
 }
+
+function numAutoFactories(){
+  document.numAutoFactories.numAutoFactories.value = numFact;
+}
+
 function buyFactory(){
   if(document.count.display.value >= 1000){
     document.count.display.value = document.count.display.value - 1000;
     numFact++
     console.log(numFact);
+    numAutoFactories();
   }else{
     alert("Invalid Funds!");
   }
