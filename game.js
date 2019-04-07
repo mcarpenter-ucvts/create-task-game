@@ -65,18 +65,18 @@ function machineStat(){
 function start(){
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
-  document.numAutoFactories.numAutoFactories.value = 0;
+  document.numAutoDills.numAutoDrills.value = 0;
 }
 
 function numAutoMiners(){
   document.numAutoMiners.numAutoMiners.value = numMachines;
 }
 
-function numAutoFactories(){
-  document.numAutoFactories.numAutoFactories.value = numFact;
+function numAutoDrills(){
+  document.numAutoDrills.numAutoDrills.value = numFact;
 }
 
-function buyFactory(){
+function buyDrill(){
   if(document.count.display.value >= 1000){
     document.count.display.value = document.count.display.value - 1000;
     numFact++
