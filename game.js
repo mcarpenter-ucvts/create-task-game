@@ -69,7 +69,7 @@ function start(){
 }
 
 function numAutoMiners(){
-  document.numAutoMiners.numAutoMiners.value = numMachines;
+  document.numAutoMiners.numAutoMiners.value = numMiner;
 }
 
 function numAutoDrills(){
