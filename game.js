@@ -58,7 +58,7 @@ setInterval(function(){
 function machineStat(){
   console.log(minerStatus)
   if(minerStatus >= 1){
-    let numOfMachines = minerStatus
+    let numOfMiner = minerStatus
     return minerStatus
   }
 }
