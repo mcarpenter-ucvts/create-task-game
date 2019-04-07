@@ -30,7 +30,7 @@ function buyMachine(){
     document.count.display.value = document.count.display.value - 50;
     console.log(i);
     numMiner++
-    machineStatus=numMachines;
+    minerStatus=numMiner;
     numAutoMiners();
     minerStat();
   }else {
@@ -55,7 +55,7 @@ setInterval(function(){
   document.stats.statsDisplay.value = cpsOverTen;
 }, 5000)
 
-function machineStat(){
+function minerStat(){
   console.log(minerStatus)
   if(minerStatus >= 1){
     let numOfMiner = minerStatus
