@@ -65,7 +65,7 @@ function machineStat(){
 function start(){
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
-  document.numAutoDills.numAutoDrills.value = 0;
+  document.numAutoDrills.numAutoDrills.value = 0;
 }
 
 function numAutoMiners(){
