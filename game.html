@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Diamond Miner</title>
+    <title>Marcus's Diamond tycoon game </title>
       <script type="text/javascript" src="game.js"></script>
       <link rel="stylesheet" type="text/css" href="game.css">
   </head>
@@ -21,8 +21,8 @@
       <p id="numAutoMiners">
         Number of Auto-Miners:
       </p>
-      <p id="numAutoFactories">
-        Number of Auto-Factories:
+      <p id="numAutoDrills">
+        Number of Auto-Drills:
       </p>
       <form name="stats">
         <input name="statsDisplay" class= statsOne disabled>
@@ -30,14 +30,14 @@
       <form name = "numAutoMiners">
         <input name="numAutoMiners" class = numAutoMiners disabled>
       </form>
-      <form name = "numAutoFactories">
-        <input name="numAutoFactories" class = numAutoFactories disabled>
+      <form name = "numAutoDrills">
+        <input name="numAutoDrills" class = numAutoDrills disabled>
       </form>
     </div>
     <button onclick="countInsert();" id="clicker">Mine Diamonds!</button>
 
     <button onclick="buyMachine();" id="machineBuy">50 Diamonds: Buy an Auto-Miner</button>
-    <button onclick="reset();" id="reset">Reset Game</button>
-    <button onclick="buyFactory();" id="factory"> 1k Diamonds Buy an Auto-Miner Factory</button>
+    <button onclick="restart();" id="restart">Reset Game</button>
+    <button onclick="buyDiamondDrill();" id="drill"> 1k Diamonds Buy an Auto-Mining Drill</button>
   </body>
 </html>
