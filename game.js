@@ -76,7 +76,7 @@ function numAutoDrills(){
   document.numAutoDrills.numAutoDrills.value = numFact;
 }
 
-function buyDrill(){
+function buyDiamondDrill(){
   if(document.count.display.value >= 1000){
     document.count.display.value = document.count.display.value - 1000;
     numFact++
