@@ -73,7 +73,7 @@ function numAutoMiners(){
 }
 
 function numAutoDrills(){
-  document.numAutoDrills.numAutoDrills.value = numFact;
+  document.numAutoDrills.numAutoDrills.value = numAutoDrills;
 }
 
 function buyDiamondDrill(){
@@ -81,7 +81,7 @@ function buyDiamondDrill(){
     document.count.display.value = document.count.display.value - 1000;
     numFact++
     console.log(numFact);
-    numAutoFactories();
+    numAutoDrills();
   }else{
     alert("Invalid Funds!");
   }
