@@ -11,7 +11,7 @@ function countInsert(){
   i++
 }
 
-function reset(){
+function restart(){
   //Colleague Wrote Reset Function//
   countInsert();
   document.count.display.value = 0;
