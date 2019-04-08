@@ -62,14 +62,6 @@ function minerStat(){
   }
 }
 
-function drillStat(){
-  console.log(drillStatus)
-  if(drillStatus >= 1){
-    let numofDrill = drillStatus
-    returnDrillStatus
-  }
-}
-
 function start(){
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
@@ -81,13 +73,12 @@ function numAutoMiners(){
 }
 
 function numAutoDrills(){
-  document.numAutoDrills.numAutoDrills.value = numAutoDrills;
+  document.numAutoDrills.numAutoDrills.value = numDrills;
 }
 
 function buyDiamondDrill(){
   if(document.count.display.value >= 1000){
     document.count.display.value = document.count.display.value - 1000;
-   drillStatus=numDrill
     numDrill++
     console.log(numDrill);
     numAutoDrills();
