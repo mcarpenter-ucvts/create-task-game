@@ -73,7 +73,7 @@ function numAutoMiners(){
 }
 
 function numAutoDrills(){
-  document.numAutoDrills.numAutoDrills.value = numDrills;
+  document.numAutoDrills.numAutoDrills.value = numDrill;
 }
 
 function buyDiamondDrill(){
