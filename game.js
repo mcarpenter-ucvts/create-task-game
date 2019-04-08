@@ -12,7 +12,6 @@ function countInsert(){
 }
 
 function restart(){
-  //Colleague Wrote Reset Function//
   countInsert();
   document.count.display.value = 0;
   i=0;
@@ -62,6 +61,15 @@ function minerStat(){
     return minerStatus
   }
 }
+
+function drillStat(){
+  console.log(drillStatus)
+  if(drillStatus >= 1){
+    let numofDrill = drillStatus
+    returnDrillStatus
+  }
+}
+
 function start(){
   document.stats.statsDisplay.value = 0;
   document.numAutoMiners.numAutoMiners.value = 0;
