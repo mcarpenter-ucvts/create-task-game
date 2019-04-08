@@ -87,6 +87,7 @@ function numAutoDrills(){
 function buyDiamondDrill(){
   if(document.count.display.value >= 1000){
     document.count.display.value = document.count.display.value - 1000;
+   drillStatus=numDrill
     numDrill++
     console.log(numDrill);
     numAutoDrills();
